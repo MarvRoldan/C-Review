@@ -11,8 +11,29 @@ namespace C_Review
 
             // Let's try an array!
             int[] myarray = new int[5] {3,4,5,6,7};
-            myarray[0] = 2; // Update value by index. // ARRAY START AT ZERO!
+            myarray[0] = 2; // Update value by index. // ARRAY START AT INDEX ZERO!
             Console.WriteLine(myarray[0]); // Output a value by index.
+
+            // // For Loop!
+            for ( int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Array Index:"+i+"| Array Value:" + myarray[i] );
+            }
+
+            // While Loop!
+            int n = 0;
+            while ( n < 5 ) 
+            {
+                Console.WriteLine("Array Index:"+n+"| Array Value:" + myarray[n] );
+                // n += 2;
+                n = n + 2;
+            }
+
+            // Foreach Loop! // They stop themselves at the end of the collection.
+            foreach (int e in myarray) // Assignment in Collection.
+            {
+                Console.WriteLine("Current Foreach Vaule is:" + e);
+            }
         }
         
         // Let's try making a method.
