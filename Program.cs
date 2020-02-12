@@ -6,6 +6,18 @@ namespace C_Review
     {
         static void Main(string[] args)
         {
+            // for a method to exectue we must call it by name.
+            MyMethod();
+
+            // Let's try an array!
+            int[] myarray = new int[5] {3,4,5,6,7};
+            myarray[0] = 2; // Update value by index. // ARRAY START AT ZERO!
+            Console.WriteLine(myarray[0]); // Output a value by index.
+        }
+        
+        // Let's try making a method.
+        static void MyMethod()
+        {
             int x = 35;
             Console.WriteLine("Hello World!" + x);
 
@@ -39,13 +51,6 @@ namespace C_Review
                     break;
             }
 
-            // for a method to exectue we must call it by name.
-            MyMethod();
-        }
-        
-        // Let's try making a method.
-        static void MyMethod()
-        {
             Console.WriteLine("Test!");
         }
     }
