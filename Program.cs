@@ -34,6 +34,11 @@ namespace C_Review
             {
                 Console.WriteLine("Current Foreach Vaule is:" + e);
             }
+
+            // Collect some user input.
+            Console.WriteLine("Please enter your name: "); // it is a good idead to ask a user so they know what you want =D
+            string myname = Console.ReadLine(); // Store thier input, or it will be lost forever =(
+            Console.WriteLine ( "Thank you, "+myname+ "!" );
         }
         
         // Let's try making a method.
