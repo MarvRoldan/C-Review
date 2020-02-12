@@ -38,6 +38,15 @@ namespace C_Review
                     Console.WriteLine("Uh oh, it is another value!");
                     break;
             }
+
+            // for a method to exectue we must call it by name.
+            MyMethod();
+        }
+        
+        // Let's try making a method.
+        static void MyMethod()
+        {
+            Console.WriteLine("Test!");
         }
     }
 }
